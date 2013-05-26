@@ -1,0 +1,57 @@
+<%= form_for(@a_vet_appt) do |f| %>
+  <% if @a_vet_appt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@a_vet_appt.errors.count, "error") %> prohibited this a_vet_appt from being saved:</h2>
+
+      <ul>
+      <% @a_vet_appt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vet_fname %><br />
+    <%= f.text_field :vet_fname %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :vet_lname %><br />
+    <%= f.text_field :vet_lname %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :vet_date %><br />
+    <%= f.text_field :vet_date %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :vet_fdate %><br />
+    <%= f.text_field :vet_fdate %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :vet_vacc %><br />
+    <%= f.text_field :vet_vacc %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

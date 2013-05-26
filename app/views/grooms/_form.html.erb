@@ -1,0 +1,41 @@
+<%= form_for(@groom) do |f| %>
+  <% if @groom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@groom.errors.count, "error") %> prohibited this groom from being saved:</h2>
+
+      <ul>
+      <% @groom.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :grappt_date %><br />
+    <%= f.text_field :grappt_date %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :grappt_futappdate %><br />
+    <%= f.text_field :grappt_futappdate %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :grappt_style %><br />
+    <%= f.text_field :grappt_style %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,22 @@
 KatiesGrmApp::Application.routes.draw do
+<<<<<<< HEAD
+=======
+  resources :a_vet_appts
+
+
+  resources :stylists
+
+
+  resources :grooms
+
+
+  resources :dogs
+
+
+  resources :users
+
+
+>>>>>>> 21e6951cf16f157b5a204deda895c63873abd04e
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,49 @@
+<%= form_for(@dog) do |f| %>
+  <% if @dog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dog.errors.count, "error") %> prohibited this dog from being saved:</h2>
+
+      <ul>
+      <% @dog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dog_name %><br />
+    <%= f.text_field :dog_name %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :dog_breed %><br />
+    <%= f.text_field :dog_breed %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :dog_allergies %><br />
+    <%= f.text_field :dog_allergies %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :dog_weight %><br />
+    <%= f.text_field :dog_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :int %><br />
+    <%= f.text_field :int %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
