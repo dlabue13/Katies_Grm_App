@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  grappt_date: MyString
+  string: MyString
+  grappt_futappdate: MyString
+  string: MyString
+  grappt_style: MyString
+  string: MyString
+
+two:
+  grappt_date: MyString
+  string: MyString
+  grappt_futappdate: MyString
+  string: MyString
+  grappt_style: MyString
+  string: MyString
