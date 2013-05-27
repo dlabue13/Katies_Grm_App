@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130526164335) do
+ActiveRecord::Schema.define(:version => 20130527133621) do
+
+  create_table "a_users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "a_vet_appts", :force => true do |t|
     t.string   "vet_fname"
@@ -33,6 +40,65 @@ ActiveRecord::Schema.define(:version => 20130526164335) do
     t.string   "int"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "gr_users", :force => true do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "phone"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "grm_dogs", :force => true do |t|
+    t.string   "name"
+    t.string   "breed"
+    t.string   "allergies"
+    t.string   "weight"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "grm_grappts", :force => true do |t|
+    t.string   "gr_date"
+    t.string   "gr_fdate"
+    t.string   "gr_style"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "grm_stylists", :force => true do |t|
+    t.string   "styl_fname"
+    t.string   "styl_lname"
+    t.string   "styl_specialty"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "grm_users", :force => true do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "phone"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "grm_vetappts", :force => true do |t|
+    t.string   "vet_fname"
+    t.string   "vet_lname"
+    t.string   "vet_date"
+    t.string   "vet_fdate"
+    t.string   "vet_vacc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "grooms", :force => true do |t|
@@ -65,6 +131,17 @@ ActiveRecord::Schema.define(:version => 20130526164335) do
     t.string   "cust_phone"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "vets", :force => true do |t|
+    t.string   "vfirst"
+    t.string   "flast"
+    t.string   "date"
+    t.string   "fdate"
+    t.string   "string"
+    t.string   "vacc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
