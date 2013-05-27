@@ -1,15 +1,15 @@
 KatiesGrmApp::Application.routes.draw do
 
-  resources :a_vet_appts
-
-
-  resources :stylists
+  resources :dogs
 
 
   resources :grooms
 
 
-  resources :dogs
+  resources :stylists
+
+
+  resources :vets
 
 
   resources :users

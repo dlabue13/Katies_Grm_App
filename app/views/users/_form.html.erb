@@ -12,62 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :f_name %><br />
-    <%= f.text_field :f_name %>
+    <%= f.label :first %><br />
+    <%= t.string :first %>
   </div>
   <div class="field">
-    <%= f.label :string %><br />
-    <%= f.text_field :string %>
+    <%= t.label :last %><br />
+    <%= t.string :last %>
   </div>
   <div class="field">
-    <%= f.label :l_name %><br />
-    <%= f.text_field :l_name %>
+    <%= t.label :address %><br />
+    <%= t.string :address %>
   </div>
   <div class="field">
-    <%= f.label :string %><br />
-    <%= f.text_field :string %>
+    <%= t.label :city %><br />
+    <%= t.string :city %>
   </div>
   <div class="field">
-    <%= f.label :cust_address %><br />
-    <%= f.text_field :cust_address %>
+    <%= t.label :state %><br />
+    <%= t.string :state %>
   </div>
   <div class="field">
-    <%= f.label :string %><br />
-    <%= f.text_field :string %>
+    <%= t.label :zip %><br />
+    <%= t.string :zip %>
   </div>
   <div class="field">
-    <%= f.label :cust_city %><br />
-    <%= f.text_field :cust_city %>
-  </div>
-  <div class="field">
-    <%= f.label :string %><br />
-    <%= f.text_field :string %>
-  </div>
-  <div class="field">
-    <%= f.label :cust_state %><br />
-    <%= f.text_field :cust_state %>
-  </div>
-  <div class="field">
-    <%= f.label :string %><br />
-    <%= f.text_field :string %>
-  </div>
-  <div class="field">
-    <%= f.label :cust_zip %><br />
-    <%= f.text_field :cust_zip %>
-  </div>
-  <div class="field">
-    <%= f.label :integer %><br />
-    <%= f.text_field :integer %>
-  </div>
-  <div class="field">
-    <%= f.label :cust_phone %><br />
-    <%= f.text_field :cust_phone %>
-  </div>
-  <div class="field">
-    <%= f.label :integer %><br />
-    <%= f.text_field :integer %>
+    <%= t.label :phone %><br />
+    <%= t.string :phone %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= t.submit %>
   </div>
 <% end %>

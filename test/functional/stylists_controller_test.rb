@@ -18,7 +18,7 @@ class StylistsControllerTest < ActionController::TestCase
 
   test "should create stylist" do
     assert_difference('Stylist.count') do
-      post :create, stylist: { string: @stylist.string, string: @stylist.string, string: @stylist.string, style_fname: @stylist.style_fname, style_specialty: @stylist.style_specialty, stylst_lname: @stylist.stylst_lname }
+      post :create, stylist: { sfirst: @stylist.sfirst, slast: @stylist.slast, specialty: @stylist.specialty }
     end
 
     assert_redirected_to stylist_path(assigns(:stylist))
@@ -35,7 +35,7 @@ class StylistsControllerTest < ActionController::TestCase
   end
 
   test "should update stylist" do
-    put :update, id: @stylist, stylist: { string: @stylist.string, string: @stylist.string, string: @stylist.string, style_fname: @stylist.style_fname, style_specialty: @stylist.style_specialty, stylst_lname: @stylist.stylst_lname }
+    put :update, id: @stylist, stylist: { sfirst: @stylist.sfirst, slast: @stylist.slast, specialty: @stylist.specialty }
     assert_redirected_to stylist_path(assigns(:stylist))
   end
 

@@ -2,12 +2,9 @@
 
 <table>
   <tr>
-    <th>Style fname</th>
-    <th>String</th>
-    <th>Stylst lname</th>
-    <th>String</th>
-    <th>Style specialty</th>
-    <th>String</th>
+    <th>Sfirst</th>
+    <th>Slast</th>
+    <th>Specialty</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,12 +12,9 @@
 
 <% @stylists.each do |stylist| %>
   <tr>
-    <td><%= stylist.style_fname %></td>
-    <td><%= stylist.string %></td>
-    <td><%= stylist.stylst_lname %></td>
-    <td><%= stylist.string %></td>
-    <td><%= stylist.style_specialty %></td>
-    <td><%= stylist.string %></td>
+    <td><%= stylist.sfirst %></td>
+    <td><%= stylist.slast %></td>
+    <td><%= stylist.specialty %></td>
     <td><%= link_to 'Show', stylist %></td>
     <td><%= link_to 'Edit', edit_stylist_path(stylist) %></td>
     <td><%= link_to 'Destroy', stylist, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -2,12 +2,9 @@
 
 <table>
   <tr>
-    <th>Grappt date</th>
-    <th>String</th>
-    <th>Grappt futappdate</th>
-    <th>String</th>
-    <th>Grappt style</th>
-    <th>String</th>
+    <th>Gdate</th>
+    <th>Gfdate</th>
+    <th>Style</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,12 +12,9 @@
 
 <% @grooms.each do |groom| %>
   <tr>
-    <td><%= groom.grappt_date %></td>
-    <td><%= groom.string %></td>
-    <td><%= groom.grappt_futappdate %></td>
-    <td><%= groom.string %></td>
-    <td><%= groom.grappt_style %></td>
-    <td><%= groom.string %></td>
+    <td><%= groom.gdate %></td>
+    <td><%= groom.gfdate %></td>
+    <td><%= groom.style %></td>
     <td><%= link_to 'Show', groom %></td>
     <td><%= link_to 'Edit', edit_groom_path(groom) %></td>
     <td><%= link_to 'Destroy', groom, method: :delete, data: { confirm: 'Are you sure?' } %></td>

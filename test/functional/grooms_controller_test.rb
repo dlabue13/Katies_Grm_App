@@ -18,7 +18,7 @@ class GroomsControllerTest < ActionController::TestCase
 
   test "should create groom" do
     assert_difference('Groom.count') do
-      post :create, groom: { grappt_date: @groom.grappt_date, grappt_futappdate: @groom.grappt_futappdate, grappt_style: @groom.grappt_style, string: @groom.string, string: @groom.string, string: @groom.string }
+      post :create, groom: { gdate: @groom.gdate, gfdate: @groom.gfdate, style: @groom.style }
     end
 
     assert_redirected_to groom_path(assigns(:groom))
@@ -35,7 +35,7 @@ class GroomsControllerTest < ActionController::TestCase
   end
 
   test "should update groom" do
-    put :update, id: @groom, groom: { grappt_date: @groom.grappt_date, grappt_futappdate: @groom.grappt_futappdate, grappt_style: @groom.grappt_style, string: @groom.string, string: @groom.string, string: @groom.string }
+    put :update, id: @groom, groom: { gdate: @groom.gdate, gfdate: @groom.gfdate, style: @groom.style }
     assert_redirected_to groom_path(assigns(:groom))
   end
 

@@ -1,33 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  f_name: MyString
-  string: MyString
-  l_name: MyString
-  string: MyString
-  cust_address: MyString
-  string: MyString
-  cust_city: MyString
-  string: MyString
-  cust_state: MyString
-  string: MyString
-  cust_zip: MyString
-  integer: MyString
-  cust_phone: MyString
-  integer: MyString
+  first: MyString
+  last: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
 
 two:
-  f_name: MyString
-  string: MyString
-  l_name: MyString
-  string: MyString
-  cust_address: MyString
-  string: MyString
-  cust_city: MyString
-  string: MyString
-  cust_state: MyString
-  string: MyString
-  cust_zip: MyString
-  integer: MyString
-  cust_phone: MyString
-  integer: MyString
+  first: MyString
+  last: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString

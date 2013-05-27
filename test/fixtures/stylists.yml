@@ -1,17 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  style_fname: MyString
-  string: MyString
-  stylst_lname: MyString
-  string: MyString
-  style_specialty: MyString
-  string: MyString
+  sfirst: MyString
+  slast: MyString
+  specialty: MyString
 
 two:
-  style_fname: MyString
-  string: MyString
-  stylst_lname: MyString
-  string: MyString
-  style_specialty: MyString
-  string: MyString
+  sfirst: MyString
+  slast: MyString
+  specialty: MyString

@@ -2,14 +2,10 @@
 
 <table>
   <tr>
-    <th>Dog name</th>
-    <th>String</th>
-    <th>Dog breed</th>
-    <th>String</th>
-    <th>Dog allergies</th>
-    <th>String</th>
-    <th>Dog weight</th>
-    <th>Int</th>
+    <th>Dname</th>
+    <th>Breed</th>
+    <th>Allergies</th>
+    <th>Weight</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,14 +13,10 @@
 
 <% @dogs.each do |dog| %>
   <tr>
-    <td><%= dog.dog_name %></td>
-    <td><%= dog.string %></td>
-    <td><%= dog.dog_breed %></td>
-    <td><%= dog.string %></td>
-    <td><%= dog.dog_allergies %></td>
-    <td><%= dog.string %></td>
-    <td><%= dog.dog_weight %></td>
-    <td><%= dog.int %></td>
+    <td><%= dog.dname %></td>
+    <td><%= dog.breed %></td>
+    <td><%= dog.allergies %></td>
+    <td><%= dog.weight %></td>
     <td><%= link_to 'Show', dog %></td>
     <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
     <td><%= link_to 'Destroy', dog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
