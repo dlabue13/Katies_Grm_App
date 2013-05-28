@@ -1,0 +1,26 @@
+<div data-role="header">
+  <a href="index.html#settings" data-direction='reverse' data-icon="arrow-l" class="ui-btn-left">Back</a>
+  <h1>My Info</h1>
+</div>
+
+<div data-role="content">
+  <ul data-role="listview">
+    <% @grm_users.each do |grm_user| %>
+      <li>
+        <%= link_to 'View Information', grm_user, "data-role" => "button", "data-icon" => "arrow-r" %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div data-role="footer" data-mini="true" data-position="fixed">
+  <div data-role="navbar" data-theme="a" data-mini="true">
+    <ul>
+      <li><a href="index.html" data-icon="home">Home</a></li>
+      <li><a href="index.html" data-icon="arrow-r">Take Pic</a></li>
+      <li><a href="index.html#settings" data-icon="gear">Settings</a></li>
+      <li><a href="index.html#about_us" data-icon="info">About Us</a></li>
+    </ul>
+  </div>
+</div>
+

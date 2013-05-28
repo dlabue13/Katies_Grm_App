@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gr_date: MyString
+  gr_fdate: MyString
+  gr_style: MyString
+
+two:
+  gr_date: MyString
+  gr_fdate: MyString
+  gr_style: MyString

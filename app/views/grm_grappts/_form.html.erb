@@ -1,0 +1,29 @@
+<%= form_for(@grm_grappt) do |f| %>
+  <% if @grm_grappt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grm_grappt.errors.count, "error") %> prohibited this grm_grappt from being saved:</h2>
+
+      <ul>
+      <% @grm_grappt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gr_date, 'Appointment Date' %><br />
+    <%= f.text_field :gr_date %><br />
+  </div>
+  <div class="field">
+    <%= f.label :gr_fdate, 'Next Appointment' %><br />
+    <%= f.text_field :gr_fdate %><br />
+  </div>
+  <div class="field">
+    <%= f.label :gr_style, 'Hair Style' %><br />
+    <%= f.text_field :gr_style %><br />
+  </div>
+  <div class="actions">
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>

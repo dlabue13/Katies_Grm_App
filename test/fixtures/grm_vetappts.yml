@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  vet_fname: MyString
+  vet_lname: MyString
+  vet_date: MyString
+  vet_fdate: MyString
+  vet_vacc: MyString
+
+two:
+  vet_fname: MyString
+  vet_lname: MyString
+  vet_date: MyString
+  vet_fdate: MyString
+  vet_vacc: MyString

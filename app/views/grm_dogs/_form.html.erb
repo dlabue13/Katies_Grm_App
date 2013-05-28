@@ -1,0 +1,33 @@
+<%= form_for(@grm_dog) do |f| %>
+  <% if @grm_dog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grm_dog.errors.count, "error") %> prohibited this grm_dog from being saved:</h2>
+
+      <ul>
+      <% @grm_dog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %><br />
+  </div>
+  <div class="field">
+    <%= f.label :breed %><br />
+    <%= f.text_field :breed %><br />
+  </div>
+  <div class="field">
+    <%= f.label :allergies %><br />
+    <%= f.text_field :allergies %><br />
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %><br />
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+ <% end %>

@@ -1,0 +1,31 @@
+<div data-role="header">
+  <a href="index.html" data-direction='reverse' data-icon="arrow-l" class="ui-btn-left">Back</a>
+  <h1>My Stylist
+    <%= link_to "New Stylist", new_grm_stylist_path, "data-role" => "button", "data-icon" => "plus", "class" => "ui-btn-right" %>
+  </h1>
+
+</div>
+
+<div data-role="content">
+  <ul data-role="listview">
+    <% @grm_stylists.each do |grm_stylist| %>
+      <li>
+        <%= link_to "#{grm_stylist.styl_fname}'s Information", grm_stylist %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div data-role="footer" data-mini="true" data-position="fixed">
+  <div data-role="navbar" data-theme="a" data-mini="true">
+    <ul>
+      <li><a href="index.html" data-icon="home">Home</a></li>
+      <li><a href="index.html" data-icon="arrow-r">Take Pic</a></li>
+      <li><a href="index.html#settings" data-icon="gear">Settings</a></li>
+      <li><a href="index.html#about_us" data-icon="info">About Us</a></li>
+    </ul>
+  </div>
+</div>
+
+
+

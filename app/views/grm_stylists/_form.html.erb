@@ -1,0 +1,29 @@
+<%= form_for(@grm_stylist) do |f| %>
+  <% if @grm_stylist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grm_stylist.errors.count, "error") %> prohibited this grm_stylist from being saved:</h2>
+
+      <ul>
+      <% @grm_stylist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :styl_fname, 'First Name' %><br />
+    <%= f.text_field :styl_fname %><br />
+  </div>
+  <div class="field">
+    <%= f.label :styl_lname, 'Last Name' %><br />
+    <%= f.text_field :styl_lname %><br />
+  </div>
+  <div class="field">
+    <%= f.label :styl_specialty, 'Specialty' %><br />
+    <%= f.text_field :styl_specialty %><br />
+  </div>
+  <div class="actions">
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  styl_fname: MyString
+  styl_lname: MyString
+  styl_specialty: MyString
+
+two:
+  styl_fname: MyString
+  styl_lname: MyString
+  styl_specialty: MyString

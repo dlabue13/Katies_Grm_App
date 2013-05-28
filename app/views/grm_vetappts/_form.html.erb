@@ -1,0 +1,37 @@
+<%= form_for(@grm_vetappt) do |f| %>
+  <% if @grm_vetappt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grm_vetappt.errors.count, "error") %> prohibited this grm_vetappt from being saved:</h2>
+
+      <ul>
+      <% @grm_vetappt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vet_fname, 'First Name' %><br />
+    <%= f.text_field :vet_fname %><br />
+  </div>
+  <div class="field">
+    <%= f.label :vet_lname, 'Last Name' %><br />
+    <%= f.text_field :vet_lname %><br />
+  </div>
+  <div class="field">
+    <%= f.label :vet_date, 'Date' %><br />
+    <%= f.text_field :vet_date %><br />
+  </div>
+  <div class="field">
+    <%= f.label :vet_fdate, 'Next Appointment Date' %><br />
+    <%= f.text_field :vet_fdate %><br />
+  </div>
+  <div class="field">
+    <%= f.label :vet_vacc, 'Vaccinations Received' %><br />
+    <%= f.text_field :vet_vacc %><br />
+  </div>
+  <div class="actions">
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>
