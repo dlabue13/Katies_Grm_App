@@ -6,6 +6,8 @@
 
 <div data-role="content">
   <%= render 'form' %>
+  <%= button_tag 'Reset', :type => 'reset' %>
+  <%= button_to "delete", grm_vetappt, :method=>:delete, :class=>:destroy, :confirm => "Are You Sure?" %>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">

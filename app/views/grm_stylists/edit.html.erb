@@ -1,11 +1,12 @@
 <div data-role="header" data-position="fixed">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
   <h1>Edit Stylist Info</h1>
-  <%= button_to "delete", grm_stylist, :method=>:delete, :class=>:destroy, :confirm => "Are You Sure?", " %>
 </div>
 
 <div data-role="content">
   <%= render 'form' %>
+  <%= button_tag 'Reset', :type => 'reset' %>
+  <%= button_to "delete", grm_stylist, :method=>:delete, :class=>:destroy, :confirm => "Are You Sure?" %>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">
