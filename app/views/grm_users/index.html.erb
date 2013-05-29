@@ -8,7 +8,6 @@
     <% @grm_users.each do |grm_user| %>
       <li>
         <%= link_to "View My Information", grm_user %>
-        <%= button_to "Delete", grm_user, :method => :delete %>
       </li>
     <% end %>
   </ul>
