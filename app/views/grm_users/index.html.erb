@@ -1,11 +1,11 @@
 <div data-role="header">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
-  <%= link_to 'New User', new_user_path, "data-role" => "button", "data-icon" => "plus"%>
   <h1>My Info</h1>
 </div>
 
 <div data-role="content">
   <ul data-role="listview">
+  <%= link_to 'New User', new_user_path, "data-role" => "button", "data-icon" => "plus"%>
     <% @grm_users.each do |grm_user| %>
       <li>
         <%= link_to 'View Information', grm_user, "data-role" => "button", "data-icon" => "arrow-r" %>
