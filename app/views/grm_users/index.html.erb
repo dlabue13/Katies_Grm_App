@@ -4,10 +4,12 @@
 </div>
 
 <div data-role="content">
+<a href="../../grm_users/new">New User</a>
   <ul data-role="listview">
     <% @grm_users.each do |grm_user| %>
       <li>
         <%= link_to 'View Information', grm_user, "data-role" => "button", "data-icon" => "arrow-r" %>
+        <a href="#" class="delete">Delete</a>
       </li>
     <% end %>
   </ul>

@@ -11,6 +11,7 @@
     <% @grm_grappts.each do |grm_grappt| %>
       <li>
         <%= link_to "#{grm_grappt.gr_date}", grm_grappt %>
+        <a href="#" class="delete">Delete</a>
       </li>
     <% end %>
   </ul>

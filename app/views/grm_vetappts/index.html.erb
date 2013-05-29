@@ -11,6 +11,7 @@
     <% @grm_vetappts.each do |grm_vetappt| %>
       <li>
         <%= link_to "#{grm_vetappt.vet_date}", grm_vetappt %>
+        <a href="#" class="delete">Delete</a>
       </li>
     <% end %>
   </ul>
