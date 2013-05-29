@@ -11,7 +11,6 @@
     <% @grm_vetappts.each do |grm_vetappt| %>
       <li>
         <%= link_to "#{grm_vetappt.vet_date}", grm_vetappt %>
-        <%=link_to "Delete", grm_vet_appt, :method => :delete, :class => "delete", :confirm => "Are you sure ?"%>
       </li>
     <% end %>
   </ul>
