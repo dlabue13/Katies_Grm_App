@@ -7,7 +7,7 @@
   <ul data-role="listview">
     <% @grm_users.each do |grm_user| %>
       <li>
-        <%= link_to 'View Information', grm_user, "data-role" => "button", "data-icon" => "arrow-r" %>
+        <%= link_to "View My Information", grm_user %>
         <a href="#" class="delete">Delete</a>
       </li>
     <% end %>
