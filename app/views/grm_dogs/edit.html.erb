@@ -1,7 +1,7 @@
 <div data-role="header" data-position="fixed">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
-  <%= link_to 'Delete', @grm_dog, :method => :delete, "data-icon" => "delete", "class" => "ui-btn-right" %>
   <h1>Edit Dog Information</h1>
+  <%= button_to "delete", grm_vetappt, :method=>:delete, :class=>:destroy, :confirm => "Are You Sure?", "data-icon" => "delete" %>
 </div>
 
 <div data-role="content">
