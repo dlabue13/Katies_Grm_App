@@ -39,5 +39,7 @@ end
 # To use debugger
 # gem 'debugger'
 
+gem 'carrierwave'
+
 #use thin
 gem 'thin'  
