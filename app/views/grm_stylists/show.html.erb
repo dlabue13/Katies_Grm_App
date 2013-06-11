@@ -22,6 +22,10 @@
       <p>Specialty:</b>
       <%= @grm_stylist.styl_specialty %>
     </li>
+    
+    <li>
+      <%= button_to "delete", grm_stylist, :method=>:delete, :class=>:destroy %>
+    </li>
   </ul>
 </div>
 
