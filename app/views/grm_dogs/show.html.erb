@@ -3,12 +3,11 @@
 <div data-role="header" data-position="fixed">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
   <%= link_to 'Edit', edit_grm_dog_path, "data-role" => "button", "data-icon" => "gear"%>
-  admin_question_path(@question.id)
-  
   <h1>View Info</h1>
 </div>
 
 <div data-role="content">
+  <%= button_to "delete", grm_dog, :method=>:delete, :class=>:destroy, :confirm => 'Are you sure?' %>
   <ul data-role="listview">
     <li>
       <p>Name: </p>
