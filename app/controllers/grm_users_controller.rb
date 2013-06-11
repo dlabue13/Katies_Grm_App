@@ -44,7 +44,7 @@ class GrmUsersController < ApplicationController
 
     respond_to do |format|
       if @grm_user.save
-        format.html { redirect_to @grm_user, notice: 'Grm user was successfully created.' }
+        format.html { redirect_to @grm_user, notice: 'User was successfully created.' }
         format.json { render json: @grm_user, status: :created, location: @grm_user }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class GrmUsersController < ApplicationController
 
     respond_to do |format|
       if @grm_user.update_attributes(params[:grm_user])
-        format.html { redirect_to @grm_user, notice: 'Grm user was successfully updated.' }
+        format.html { redirect_to @grm_user, notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

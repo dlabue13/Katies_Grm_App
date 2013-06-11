@@ -44,7 +44,7 @@ class GrmVetapptsController < ApplicationController
 
     respond_to do |format|
       if @grm_vetappt.save
-        format.html { redirect_to @grm_vetappt, notice: 'Grm vetappt was successfully created.' }
+        format.html { redirect_to @grm_vetappt, notice: 'Vet appointment was successfully created.' }
         format.json { render json: @grm_vetappt, status: :created, location: @grm_vetappt }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class GrmVetapptsController < ApplicationController
 
     respond_to do |format|
       if @grm_vetappt.update_attributes(params[:grm_vetappt])
-        format.html { redirect_to @grm_vetappt, notice: 'Grm vetappt was successfully updated.' }
+        format.html { redirect_to @grm_vetappt, notice: 'Vet appointment was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -44,7 +44,7 @@ class GrmDogsController < ApplicationController
 
     respond_to do |format|
       if @grm_dog.save
-        format.html { redirect_to @grm_dog, notice: 'Grm dog was successfully created.' }
+        format.html { redirect_to @grm_dog, notice: 'Dog was succesfully created.' }
         format.json { render json: @grm_dog, status: :created, location: @grm_dog }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class GrmDogsController < ApplicationController
 
     respond_to do |format|
       if @grm_dog.update_attributes(params[:grm_dog])
-        format.html { redirect_to @grm_dog, notice: 'Grm dog was successfully updated.' }
+        format.html { redirect_to @grm_dog, notice: 'Dog was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

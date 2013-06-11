@@ -44,7 +44,7 @@ class GrmGrapptsController < ApplicationController
 
     respond_to do |format|
       if @grm_grappt.save
-        format.html { redirect_to @grm_grappt, notice: 'Grm grappt was successfully created.' }
+        format.html { redirect_to @grm_grappt, notice: 'Grooming appointment was successfully created.' }
         format.json { render json: @grm_grappt, status: :created, location: @grm_grappt }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class GrmGrapptsController < ApplicationController
 
     respond_to do |format|
       if @grm_grappt.update_attributes(params[:grm_grappt])
-        format.html { redirect_to @grm_grappt, notice: 'Grm grappt was successfully updated.' }
+        format.html { redirect_to @grm_grappt, notice: 'Grooming appointment was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

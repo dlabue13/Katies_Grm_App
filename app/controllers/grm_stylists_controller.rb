@@ -44,7 +44,7 @@ class GrmStylistsController < ApplicationController
 
     respond_to do |format|
       if @grm_stylist.save
-        format.html { redirect_to @grm_stylist, notice: 'Grm stylist was successfully created.' }
+        format.html { redirect_to @grm_stylist, notice: 'Stylist was successfully created.' }
         format.json { render json: @grm_stylist, status: :created, location: @grm_stylist }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class GrmStylistsController < ApplicationController
 
     respond_to do |format|
       if @grm_stylist.update_attributes(params[:grm_stylist])
-        format.html { redirect_to @grm_stylist, notice: 'Grm stylist was successfully updated.' }
+        format.html { redirect_to @grm_stylist, notice: 'Stylist was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
