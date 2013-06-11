@@ -23,7 +23,7 @@
       <%= @grm_stylist.styl_specialty %>
     </li>
   </ul>
-  <%= button_to "Delete Stylist", grm_stylist, :method=>:delete, :class=>:destroy, :confirm=>"Are you sure?" %>
+  <%= button_to "Delete Stylist", { :action => "delete", :id => @grm_stylist.id }, :confirm => "Are you sure?", :method => :delete %>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">

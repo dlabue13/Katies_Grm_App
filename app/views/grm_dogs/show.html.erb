@@ -3,6 +3,8 @@
 <div data-role="header" data-position="fixed">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
   <%= link_to 'Edit', edit_grm_dog_path, "data-role" => "button", "data-icon" => "gear"%>
+  admin_question_path(@question.id)
+  
   <h1>View Info</h1>
 </div>
 
@@ -25,7 +27,7 @@
       <%= @grm_dog.weight %>
     </li>
   </ul>
-  <%= button_to "Delete Dog", grm_dog, :method=>:delete, :class=>:destroy, :confirm=>"Are you sure?" %>
+  <%= button_to "Delete Dog", { :action => "delete", :id => @grm_dog.id }, :confirm => "Are you sure?", :method => :delete %>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">
