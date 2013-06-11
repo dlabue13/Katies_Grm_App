@@ -7,7 +7,6 @@
 </div>
 
 <div data-role="content">
-  <%= button_to "delete", grm_dog, :method=>:delete, :class=>:destroy, :confirm => 'Are you sure?' %>
   <ul data-role="listview">
     <li>
       <p>Name: </p>
@@ -26,6 +25,7 @@
       <%= @grm_dog.weight %>
     </li>
   </ul>
+  <%= link_to 'delete', post, method: :delete, confirm: 'Are you sure?', class: 'button_class' %>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">
