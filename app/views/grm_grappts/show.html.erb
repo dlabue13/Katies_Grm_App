@@ -23,6 +23,7 @@
       <%= @grm_grappt.gr_style %>
     </li>
   </ul>
+  <%= button_to "Delete Appointment", grm_grappt, :method=>:delete, :class=>:destroy, :confirm=>"Are you sure?" %>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">
