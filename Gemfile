@@ -19,7 +19,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'jquerymobile-rails'
+gem "jquery_mobile-rails", :git => 'https://github.com/Guidecase/jquery_mobile-rails.git'
 
 
 group :production do
