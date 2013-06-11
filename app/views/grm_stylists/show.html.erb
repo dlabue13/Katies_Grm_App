@@ -2,7 +2,7 @@
 
 <div data-role="header" data-position="fixed">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
-  <%= link_to 'Edit', edit_grm_stylist_path, "data-role" => "button", "data-icon" => "gear"%>
+  <%= button_to "delete", grm_stylist, :method=>:delete, :class=>:destroy, "data-icon" => "delete" %>
   <h1>Pet Stylist</h1>
 </div>
 
@@ -22,11 +22,8 @@
       <p>Specialty:</b>
       <%= @grm_stylist.styl_specialty %>
     </li>
-    
-    <li>
-      <%= button_to "delete", grm_stylist, :method=>:delete, :class=>:destroy %>
-    </li>
   </ul>
+  <%= link_to 'Edit', edit_grm_stylist_path, "data-role" => "button", "data-icon" => "gear"%>
 </div>
 
 <div data-role="footer" data-mini="true" data-position="fixed">
