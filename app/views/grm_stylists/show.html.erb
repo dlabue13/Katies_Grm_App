@@ -2,7 +2,7 @@
 
 <div data-role="header" data-position="fixed">
   <a data-rel="back" data-icon="arrow-l" class="ui-btn-left">Back</a>
-  <%= button_to "delete", grm_stylist, :method=>:delete, :class=>:destroy, "data-icon" => "delete" %>
+  <%= link_to 'Edit', edit_grm_stylist_path, "data-role" => "button", "data-icon" => "gear"%>
   <h1>Pet Stylist</h1>
 </div>
 

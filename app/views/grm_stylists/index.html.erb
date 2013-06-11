@@ -11,6 +11,7 @@
     <% @grm_stylists.each do |grm_stylist| %>
       <li>
         <%= link_to "#{grm_stylist.styl_fname}'s Information", grm_stylist %>
+        <%= link_to 'Destroy', grm_stylist, :method => "delete", :confirm => 'Are you sure?'  %>
       </li>
     <% end %>
   </ul>

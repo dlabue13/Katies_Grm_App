@@ -16,11 +16,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '1.2.3'
+  gem 'jquery-rails'
+  gem 'jquery_mobile_rails'
 end
-
-gem 'jquery-rails'
-gem 'jquery_mobile_rails'
-
 
 group :production do
   gem 'pg'
