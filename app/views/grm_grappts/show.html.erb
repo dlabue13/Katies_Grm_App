@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div data-role="header" data-position="fixed">
+  <%= link_to 'Back', :back %>
   <%= button_to "Delete", @grm_grappt, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :confirm => "Are you sure" %>
   <h1>View Appts</h1>
 </div>
