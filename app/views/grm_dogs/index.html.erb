@@ -11,6 +11,7 @@
     <% @grm_dogs.each do |grm_dog| %>
       <li>
         <%= link_to "#{grm_dog.name}'s Information", grm_dog %>
+        <%= link_to 'Destroy', grm_dog, :method => "delete", :confirm => 'Are you sure?' %>
       </li>
     <% end %>
   </ul>
@@ -27,4 +28,4 @@
   </div>
 </div>
 
-
+ 
