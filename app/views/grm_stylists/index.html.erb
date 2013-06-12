@@ -11,7 +11,7 @@
     <% @grm_stylists.each do |grm_stylist| %>
       <li>
         <%= link_to "#{grm_stylist.styl_fname}'s Information", grm_stylist %>
-        <%= link_to_destroy "Destroy", grm_stylist_path(grm_stylist) %>
+        <%= link_to 'Delete', @grm_stylist, :method => :delete, "data-icon" => "delete" %>
       </li>
     <% end %>
   </ul>
