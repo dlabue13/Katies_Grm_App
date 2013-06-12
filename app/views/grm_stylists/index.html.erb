@@ -1,4 +1,5 @@
 <div data-role="header">
+  <%= link_to_function "Back", "history.back()", {"data-icon" => "arrow-l"} %>
   <h1>My Stylist  </h1>
   <%= link_to "New", new_grm_stylist_path, "data-role" => "button", "data-icon" => "plus", "class" => "ui-btn-right" %>
 </div>
