@@ -7,11 +7,11 @@
 </div>
 
 <div data-role="content">
-  <ul data-role="listview">
+  <ul data-role="listview" data-split-icon="gear">
     <% @grm_dogs.each do |grm_dog| %>
       <li>
         <%= link_to "#{grm_dog.name}'s Information", grm_dog %>
-        <%= link_to 'Edit', edit_grm_dog_path(grm_dog), :class => "gear" %>
+        <%= link_to 'Edit', edit_grm_dog_path(grm_dog) %>
       </li>
     <% end %>
   </ul>
