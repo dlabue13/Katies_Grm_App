@@ -11,7 +11,6 @@
     <% @grm_dogs.each do |grm_dog| %>
       <li>
         <%= link_to "#{grm_dog.name}'s Information", grm_dog %>
-        <%= link_to 'Edit', edit_grm_dog_path, "data-role" => "button", "data-icon" => "gear"%>
       </li>
     <% end %>
   </ul>
