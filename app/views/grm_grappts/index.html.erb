@@ -11,7 +11,7 @@
     <% @grm_grappts.each do |grm_grappt| %>
       <li>
         <%= link_to "#{grm_grappt.gr_date}", grm_grappt %>
-        <%= link_to 'Edit', edit_grm_grappt_path, "data-role" => "button", "data-icon" => "gear"%>
+        <%= link_to 'Edit', edit_grm_grappt_path, "data-icon" => "gear"%>
       </li>
     <% end %>
   </ul>
