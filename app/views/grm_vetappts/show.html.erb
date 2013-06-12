@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div data-role="header" data-position="fixed">
-  <%= link_to_function "Back", "history.back()" %>
+  <%= link_to_function "Back", "history.back()", {"data-icon" => "ui-btn-left"} %>
   <%= button_to "Delete", @grm_vetappt, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :confirm => "Are you sure" %>
   <h1>View Appts</h1>
 </div>
