@@ -11,7 +11,7 @@
     <% @grm_vetappts.each do |grm_vetappt| %>
       <li>
         <%= link_to "#{grm_vetappt.vet_date}", grm_vetappt %>
-        <%= link_to 'Edit', edit_grm_vetappt_path, "data-icon" => "gear"%>
+        <%= link_to 'Edit', edit_grm_vetappt_path %>
       </li>
     <% end %>
   </ul>
