@@ -1,0 +1,29 @@
+<%= form_for @grm_pic, html: { multipart: true } do |f| %> - See more at: http://rubysource.com/processing-images-with-carrierwave/#sthash.zsIhbcAx.dpuf
+  <% if @grm_pic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@grm_pic.errors.count, "error") %> prohibited this grm_pic from being saved:</h2>
+
+      <ul>
+      <% @grm_pic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.text_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,5 +1,8 @@
 KatiesGrmApp::Application.routes.draw do
 
+  resources :grm_pics
+
+
   resources :grm_vetappts
 
 
