@@ -2,6 +2,8 @@
 
 class ImageUploader < CarrierWave::Uploader::Base
 
+  include ActionView::AssetPaths
+  include ActionView::Helpers::AssetTagHelper
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
