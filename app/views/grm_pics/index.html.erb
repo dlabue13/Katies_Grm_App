@@ -1,27 +1,27 @@
-<h1>Listing grm_pics</h1>
+<div data-role="header">
+  <%= link_to_function "Back", "history.back()", {"data-icon" => "arrow-l"} %>
+  <h1>Dog Pics</h1>
+    <%= link_to "New", new_grm_pic_path, "data-role" => "button", "data-icon" => "plus", "class" => "ui-btn-right" %>
+</div>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Image</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div data-role="content">
+  <ul data-role="listview" data-split-icon="gear">
+    <% @grm_pics.each do |grm_dog| %>
+      <li>
+        <%= link_to "#{grm_pic.name}", grm_dog %>
+        <%= link_to 'Edit', edit_grm_pic_path(grm_pic) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 
-<% @grm_pics.each do |grm_pic| %>
-  <tr>
-    <td><%= grm_pic.name %></td>
-    <td><%= grm_pic.description %></td>
-    <td><%= image_tag grm_pic.image_url %></td>
-    <td><%= link_to 'Show', grm_pic %></td>
-    <td><%= link_to 'Edit', edit_grm_pic_path(grm_pic) %></td>
-    <td><%= link_to 'Destroy', grm_pic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Grm pic', new_grm_pic_path %>
+<div data-role="footer" data-mini="true" data-position="fixed">
+  <div data-role="navbar" data-theme="a" data-mini="true">
+    <ul>
+      <li><a href="../../index.html" data-icon="home">Home</a></li>
+      <li><a href="../../index.html" data-icon="arrow-r">Take Pic</a></li>
+      <li><a href="../../index.html#settings" data-icon="gear">Settings</a></li>
+      <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+    </ul>
+  </div>
+</div>
