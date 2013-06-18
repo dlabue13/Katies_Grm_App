@@ -14,7 +14,7 @@
   <tr>
     <td><%= grm_pic.name %></td>
     <td><%= grm_pic.description %></td>
-    <td><%= image_tag grm_pic.image_url(:thumb) %></td>
+    <td><%= image_tag grm_pic.image_url %></td>
     <td><%= link_to 'Show', grm_pic %></td>
     <td><%= link_to 'Edit', edit_grm_pic_path(grm_pic) %></td>
     <td><%= link_to 'Destroy', grm_pic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
