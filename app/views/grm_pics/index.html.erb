@@ -8,7 +8,7 @@
   <ul data-role="listview" data-split-icon="gear">
     <% @grm_pics.each do |grm_pic| %>
       <li>
-        <%= link_to "#{grm_pic.name}", grm_dog %>
+        <%= link_to "#{grm_pic.name}", grm_pic %>
         <%= link_to 'Edit', edit_grm_pic_path(grm_pic) %>
       </li>
     <% end %>
