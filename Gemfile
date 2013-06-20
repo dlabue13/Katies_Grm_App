@@ -41,6 +41,7 @@ end
 # gem 'debugger'
 
 gem 'carrierwave'
+gem 'rmagick'
 
 #use thin
 gem 'thin' 
