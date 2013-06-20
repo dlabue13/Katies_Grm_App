@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div data-role="header" data-position="fixed">
-  <%= link_to_function "Back", "history.back()", {"data-icon" => "arrow-l"} %>
+<div data-role="header" data-position="fixed" data-add-back-btn="true">
   <%= button_to "Delete", @grm_dog, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :confirm => "Are you sure" %>
   <h1>View Info</h1>
 </div>
@@ -32,7 +31,7 @@
     <ul>
       <li><a href="../../index.html" data-icon="home">Home</a></li>
       <li><a href="../../index.html" data-icon="arrow-r">Take Pic</a></li>
-      <li><a href="../../index.html#settings" data-icon="gear">Settings</a></li>
+      <li><a href="../../index.html#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
       <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
     </ul>
   </div>

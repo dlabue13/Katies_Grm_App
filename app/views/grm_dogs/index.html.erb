@@ -1,5 +1,4 @@
-<div data-role="header">
-  <%= link_to_function "Back", "history.back()", {"data-icon" => "arrow-l"} %>
+<div data-role="header" data-position="fixed" data-add-back-btn="true">
   <h1>My Dog</h1>
     <%= link_to "New", new_grm_dog_path, "data-role" => "button", "data-icon" => "plus", "class" => "ui-btn-right" %>
 </div>
@@ -20,7 +19,7 @@
     <ul>
       <li><a href="../../index.html" data-icon="home">Home</a></li>
       <li><a href="../../index.html" data-icon="arrow-r">Take Pic</a></li>
-      <li><a href="../../index.html#settings" data-icon="gear">Settings</a></li>
+      <li><a href="../../index.html#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
       <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
     </ul>
   </div>
