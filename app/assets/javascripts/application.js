@@ -11,3 +11,5 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery.mobile
+//= require jquery
+//= require jquery_ujs
