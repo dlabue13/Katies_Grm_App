@@ -17,7 +17,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-  "assets/images/temp/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  "app/assets/images/temp/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
    # "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
@@ -38,7 +38,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
    version :thumb do
-     process :resize_to_limit => [100, 100]
+     process :resize_to_limit => [200, 200]
    end
 
   # Add a white list of extensions which are allowed to be uploaded.
