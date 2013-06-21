@@ -7,6 +7,7 @@
       <% @grm_users.each do |grm_user| %>
         <li>
           <%= link_to "View My Information", grm_user %>
+          <%= link_to 'Edit', edit_grm_user_path(grm_user) %>
         </li>
       <% end %>
     </ul>
