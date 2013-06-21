@@ -1,5 +1,6 @@
   <div data-role="header" data-position="fixed">
     <h1>Edit Pic</h1>
+    <%= button_to "Delete", @grm_pic, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :confirm => "Are you sure" %>
   </div>
 
   <div data-role="content">
