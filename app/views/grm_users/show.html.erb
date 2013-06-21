@@ -1,50 +1,51 @@
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
+<data data-role="page" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed" data-add-back-btn="true">
+    <%= link_to 'Edit', edit_grm_user_path, "data-role" => "button", "data-icon" => "gear"%>
+    <h1>View Info</h1>
+  </div>
 
-<div data-role="header" data-position="fixed" data-add-back-btn="true">
-  <%= link_to 'Edit', edit_grm_user_path, "data-role" => "button", "data-icon" => "gear"%>
-  <h1>View Info</h1>
-</div>
-
-<div data-role="content">
-  <ul data-role="listview">
-    <li>
-      <p>First Name: </p>
-      <%= @grm_user.fname %>
-    </li>
-    <li>
-      <p>Last Name: </p>
-      <%= @grm_user.lname %>
-    </li>
-    <li>
-      <p>Address: </p>
-      <%= @grm_user.address %>
-    </li>
-    <li>
-      <p>City: </p>
-      <%= @grm_user.city %>
-    </li>
-    <li>
-      <p>State: </p>
-      <%= @grm_user.state %>
-    </li>
-    <li>
-      <p>Zip: </p>
-      <%= @grm_user.zip %>
-    </li>
-    <li>
-      <p>Phone: </p>
-      <%= @grm_user.phone %>
-    </li>
-  </ul>
-</div>
-
-<div data-role="footer" data-mini="true" data-position="fixed">
-  <div data-role="navbar" data-theme="a" data-mini="true">
-    <ul>
-      <li><a href="../../index.html" data-icon="home">Home</a></li>
-      <li><a href="../../index.html" data-icon="arrow-r">Take Pic</a></li>
-      <li><a href="../../index.html#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
-      <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+  <div data-role="content">
+    <ul data-role="listview">
+      <li>
+        <p>First Name: </p>
+        <%= @grm_user.fname %>
+      </li>
+      <li>
+        <p>Last Name: </p>
+        <%= @grm_user.lname %>
+      </li>
+      <li>
+        <p>Address: </p>
+        <%= @grm_user.address %>
+      </li>
+      <li>
+        <p>City: </p>
+        <%= @grm_user.city %>
+      </li>
+      <li>
+        <p>State: </p>
+        <%= @grm_user.state %>
+      </li>
+      <li>
+        <p>Zip: </p>
+        <%= @grm_user.zip %>
+      </li>
+      <li>
+        <p>Phone: </p>
+        <%= @grm_user.phone %>
+      </li>
     </ul>
+  </div>
+
+  <div data-role="footer" data-mini="true" data-position="fixed">
+    <div data-role="navbar" data-theme="a" data-mini="true">
+      <ul>
+        <li><a href="../../index.html" data-icon="home">Home</a></li>
+        <li><a href="grm_pic" data-icon="arrow-r">Take Pic</a></li>
+        <li><a href="../../index.html#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
+        <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+      </ul>
+    </div>
   </div>
 </div>

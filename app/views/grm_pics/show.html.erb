@@ -1,37 +1,35 @@
 <p id="notice"><%= notice %></p>
+<data data-role="page" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <%= button_to "Delete", @grm_pic, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :confirm => "Are you sure" %>
+    <h1>View Appts</h1>
+  </div>
 
-<div data-role="header" data-position="fixed" data-add-back-btn="true">
-  <%= button_to "Delete", @grm_pic, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :confirm => "Are you sure" %>
-  <h1>View Appts</h1>
-</div>
+  <div data-role="content">
+    <ul data-role="listview">
+      <li>
+        <p>Name:</p>
+        <%= @grm_pic.name %>
+      </li>
 
-<div data-role="content">
-  <ul data-role="listview">
-    <li>
-      <p>Name:</p>
-      <%= @grm_pic.name %>
-    </li>
-
-    <li>
-      <p>Description:</p>
-      <%= @grm_pic.description %>
-    </li>
- 
-    <li>
-      <%= image_tag @grm_pic.image_url %>
-    </li>
-  </ul>
-</div>
-
-<div data-role="footer" data-mini="true" data-position="fixed">
-  <div data-role="navbar" data-theme="a" data-mini="true">
-    <ul>
-      <li><a href="../../index.html" data-icon="home">Home</a></li>
-      <li><a href="../../index.html" data-icon="arrow-r">Take Pic</a></li>
-      <li><a href="../../index.html#settings" data-icon="gear">Settings</a></li>
-      <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+      <li>
+        <p>Description:</p>
+        <%= @grm_pic.description %>
+      </li>
     </ul>
+    <p>
+      <%= image_tag @grm_pic.image_url %>
+    </p>
+  </div>
+
+  <div data-role="footer" data-mini="true" data-position="fixed">
+    <div data-role="navbar" data-theme="a" data-mini="true">
+      <ul>
+        <li><a href="../../index.html" data-icon="home">Home</a></li>
+        <li><a href="grm_pic" data-icon="arrow-r" class="ui-btn-active">Take Pic</a></li>
+        <li><a href="../../index.html#settings" data-icon="gear">Settings</a></li>
+        <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+      </ul>
+    </div>
   </div>
 </div>
-
-

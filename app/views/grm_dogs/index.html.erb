@@ -1,28 +1,29 @@
-<div data-role="header" data-position="fixed" data-add-back-btn="true">
-  <h1>My Dog</h1>
-    <%= link_to "New", new_grm_dog_path, "data-role" => "button", "data-icon" => "plus", "class" => "ui-btn-right" %>
-</div>
+<data data-role="page" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>My Dog</h1>
+      <%= link_to "New", new_grm_dog_path, "data-role" => "button", "data-icon" => "plus", "class" => "ui-btn-right" %>
+  </div>
 
-<div data-role="content">
-  <ul data-role="listview" data-split-icon="gear">
-    <% @grm_dogs.each do |grm_dog| %>
-      <li>
-        <%= link_to "#{grm_dog.name}'s Information", grm_dog %>
-        <%= link_to 'Edit', edit_grm_dog_path(grm_dog) %>
-      </li>
-    <% end %>
-  </ul>
-</div>
-
-<div data-role="footer" data-mini="true" data-position="fixed">
-  <div data-role="navbar" data-theme="a" data-mini="true">
-    <ul>
-      <li><a href="../../index.html" data-icon="home">Home</a></li>
-      <li><a href="../../index.html" data-icon="arrow-r">Take Pic</a></li>
-      <li><a href="../../index.html#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
-      <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+  <div data-role="content">
+    <ul data-role="listview" data-split-icon="gear">
+      <% @grm_dogs.each do |grm_dog| %>
+        <li>
+          <%= link_to "#{grm_dog.name}'s Information", grm_dog %>
+          <%= link_to 'Edit', edit_grm_dog_path(grm_dog) %>
+        </li>
+      <% end %>
     </ul>
   </div>
-</div>
+
+  <div data-role="footer" data-mini="true" data-position="fixed">
+    <div data-role="navbar" data-theme="a" data-mini="true">
+      <ul>
+        <li><a href="../../index.html" data-icon="home">Home</a></li>
+        <li><a href="grm_pic" data-icon="arrow-r">Take Pic</a></li>
+        <li><a href="../../index.html#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
+        <li><a href="../../index.html#about_us" data-icon="info">About Us</a></li>
+      </ul>
+    </div>
+  </div>
 
  
