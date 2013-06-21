@@ -6,7 +6,9 @@
   <div data-role="content">
     <ul data-role="listview" data-split-icon="gear">
       <% @grm_pics.each do |grm_pic| %> 
-        <%= link_to "#{image_tag(grm_pic.image_url(:thumb))}", grm_pic %>
+        <%= link_to 'grm_pic' do %>
+          <%= image_tag('grm_pic.image_url(:thumb)') %>
+        <% end %>
 	<%= link_to 'Edit', edit_grm_pic_path(grm_pic) %>
       <% end %>
     </ul>
