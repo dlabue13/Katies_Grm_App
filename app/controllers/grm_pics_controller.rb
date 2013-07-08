@@ -44,12 +44,13 @@ class GrmPicsController < ApplicationController
 
     respond_to do |format|
       if @grm_pic.save
-        format.html { redirect_to @grm_pic, notice: 'Grm pic was successfully created.' }
-        format.json { render json: @grm_pic, status: :created, location: @grm_pic }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @grm_pic.errors, status: :unprocessable_entity }
-      end
+        format.js
+       # format.html { redirect_to @grm_pic, notice: 'Grm pic was successfully created.' }
+       # format.json { render json: @grm_pic, status: :created, location: @grm_pic }
+      # else
+       # format.html { render action: "new" }
+       # format.json { render json: @grm_pic.errors, status: :unprocessable_entity }
+     # end
     end
   end
 
