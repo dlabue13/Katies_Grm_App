@@ -50,7 +50,7 @@ class GrmPicsController < ApplicationController
       # else
        # format.html { render action: "new" }
        # format.json { render json: @grm_pic.errors, status: :unprocessable_entity }
-     # end
+      end
     end
   end
 
