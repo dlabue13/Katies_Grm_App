@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'remotipart', '~> 1.2'
+
 
 group :development do
   gem 'sqlite3', '1.3.5'
@@ -21,6 +21,7 @@ end
 
   gem 'jquery-rails'
   gem 'jquery_mobile_rails'
+  gem 'remotipart', '~> 1.2'
 
 group :production do
   gem 'pg'
