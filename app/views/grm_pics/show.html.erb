@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
   <div data-role="header" data-position="fixed">
-    <!-- http://stackoverflow.com/questions/6602520/confirm-and-method-not-working-in-rails-button-to -->
     <%= button_to "Delete", @grm_pic, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :onclick => "return confirm('Are you sure?')" %>
     <h1>View Pics</h1>
   </div>
