@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
   <div data-role="header" data-position="fixed">
-    <a href="delete_vetappts" data-role="button" data-rel="dialog" class="ui-btn-right" data-icon="delete" datatransition="pop">Delete</a>
+    <%= button_to "Delete", @grm_vetappt, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :onclick => "return confirm('Are you sure?')" %>
+    <!-- <a href="delete_vetappts" data-role="button" data-rel="dialog" class="ui-btn-right" data-icon="delete" datatransition="pop">Delete</a> -->
     <h1>View Appts</h1>
   </div>
 
