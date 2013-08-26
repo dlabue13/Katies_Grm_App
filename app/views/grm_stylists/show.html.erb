@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
   <div data-role="header" data-position="fixed">
-      <%= button_to "Delete", @grm_stylist, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :onclick => "return confirm('Are you sure?')" %>
+    <!-- <a href="delete_stylists" data-role="button" data-rel="dialog" class="ui-btn-right" data-icon="delete" datatransition="pop">Delete</a> -->
+    <%= button_to "Delete", @grm_stylist, :method => :delete, :class => 'ui-btn-right', "data-icon" => "delete", :onclick => "return confirm('Are you sure?')" %>
     <h1>Pet Stylist</h1>
   </div>
 
