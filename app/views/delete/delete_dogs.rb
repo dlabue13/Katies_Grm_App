@@ -1,4 +1,4 @@
-<div data-role="page">
+<div data-role="page" id="delete_dog">
   <div data-role="header">
     <h1>Delete Appt</h1>
   </div>
