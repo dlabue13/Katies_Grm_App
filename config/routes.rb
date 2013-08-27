@@ -1,5 +1,7 @@
 KatiesGrmApp::Application.routes.draw do
 
+  get "deletes/destroy"
+
   resources :grm_pics
 
 
