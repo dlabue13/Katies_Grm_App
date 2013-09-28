@@ -1,9 +1,12 @@
 #banner {
-    position: absolute;
-    top:43px;
-    bottom: 0;
+    position:absolute;
+    top:0;
+    bottom:0;
     left:0;
     right:0;
-    padding: 0 !important;
-    background:transparent url('assets/banner.png') no-repeat center top;
+    background:transparent url(images/banner.png) no-repeat left 10px;
+    width:320px;
+    height:284px;
+    margin:-10px auto -150px auto;
+    text-indent:-9999px; 
 }
