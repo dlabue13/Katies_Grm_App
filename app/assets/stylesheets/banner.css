@@ -1,0 +1,9 @@
+#banner {
+    position: absolute;
+    top:43px;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding: 0 !important;
+    background:transparent url('http://m.stanford.edu/img/banner/banner.jpg') no-repeat center top;
+}
